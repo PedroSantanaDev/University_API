@@ -9,6 +9,7 @@ namespace University_API.Models
         public int Credits { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+        public virtual ICollection<CourseScheduled> CourseScheduleds { get; set; }
 
         /// <summary>
         /// Model Constructor
