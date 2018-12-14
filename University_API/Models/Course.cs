@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System;
 
 namespace University_API.Models
 {
@@ -17,6 +18,7 @@ namespace University_API.Models
         public Course()
         {
             Enrollments = new HashSet<Enrollment>();
+            CourseScheduleds = new HashSet<CourseScheduled>();
         }
     }
 }

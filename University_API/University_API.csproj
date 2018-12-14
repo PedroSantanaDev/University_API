@@ -159,8 +159,9 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\StudentsController.cs" />
+    <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -169,9 +170,9 @@
     <Compile Include="Migrations\201812140111325_Student_Migration.Designer.cs">
       <DependentUpon>201812140111325_Student_Migration.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812140206484_Course.cs" />
-    <Compile Include="Migrations\201812140206484_Course.Designer.cs">
-      <DependentUpon>201812140206484_Course.cs</DependentUpon>
+    <Compile Include="Migrations\201812140236321_Course_Migration.cs" />
+    <Compile Include="Migrations\201812140236321_Course_Migration.Designer.cs">
+      <DependentUpon>201812140236321_Course_Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Course.cs" />
@@ -268,8 +269,8 @@
     <EmbeddedResource Include="Migrations\201812140111325_Student_Migration.resx">
       <DependentUpon>201812140111325_Student_Migration.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812140206484_Course.resx">
-      <DependentUpon>201812140206484_Course.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201812140236321_Course_Migration.resx">
+      <DependentUpon>201812140236321_Course_Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -13,7 +13,7 @@ using University_API.Models;
 
 namespace University_API.Controllers
 {
-    public class StudentsController : ApiController
+    public class StudentController : ApiController
     {
         private UniversityContext db = new UniversityContext();
 
