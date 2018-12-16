@@ -14,6 +14,12 @@ namespace University_API.Models
         public DateTime EnrollmentDate { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
+        public virtual ICollection<Address> Addresses { get; set; }
 
+        public Student()
+        {
+            Enrollments = new HashSet<Enrollment>();
+            Addresses = new HashSet<Address>();
+        }
     }
 }

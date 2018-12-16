@@ -12,5 +12,6 @@ namespace University_API.Models
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseScheduled> CourseScheduleds { get; set; }
+        public DbSet<Staff> Staffs { get; set; }
     }
 }

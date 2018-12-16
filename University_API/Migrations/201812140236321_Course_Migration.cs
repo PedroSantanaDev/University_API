@@ -1,6 +1,6 @@
 namespace University_API.Migrations
 {
-    using System;
+
     using System.Data.Entity.Migrations;
     using University_API.Models;
 
