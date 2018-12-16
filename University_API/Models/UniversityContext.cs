@@ -7,7 +7,7 @@ using System.Web;
 namespace University_API.Models
 {
     public class UniversityContext : DbContext { 
-        public UniversityContext() : base("UniversityContext") { }
+        public UniversityContext() : base("default") { }
         public DbSet<Student> Students { get; set; }
         public DbSet<Enrollment> Enrollments { get; set; }
         public DbSet<Course> Courses { get; set; }

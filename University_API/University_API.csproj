@@ -167,14 +167,6 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201812140111325_Student_Migration.cs" />
-    <Compile Include="Migrations\201812140111325_Student_Migration.Designer.cs">
-      <DependentUpon>201812140111325_Student_Migration.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201812140236321_Course_Migration.cs" />
-    <Compile Include="Migrations\201812140236321_Course_Migration.Designer.cs">
-      <DependentUpon>201812140236321_Course_Migration.cs</DependentUpon>
-    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Address.cs" />
     <Compile Include="Models\Course.cs" />
@@ -266,14 +258,6 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201812140111325_Student_Migration.resx">
-      <DependentUpon>201812140111325_Student_Migration.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201812140236321_Course_Migration.resx">
-      <DependentUpon>201812140236321_Course_Migration.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

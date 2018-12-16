@@ -13,12 +13,5 @@ namespace University_API.Models
         public DateTime? DateOfBirth { get; set; }
         public string Title { get; set; }
         public string PhoneNumber { get; set; }
-
-        public virtual ICollection<Address> Addresses { get; set; }
-
-        public Staff()
-        {
-            Addresses = new HashSet<Address>();
-        }
     }
 }
