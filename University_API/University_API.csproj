@@ -160,6 +160,8 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
     <Compile Include="Controllers\CourseController.cs" />
+    <Compile Include="Controllers\CourseScheduledController.cs" />
+    <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Migrations\201812162343460_Student_Migration.cs" />
     <Compile Include="Migrations\201812162343460_Student_Migration.Designer.cs">

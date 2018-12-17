@@ -13,44 +13,44 @@ using University_API.Models;
 
 namespace University_API.Controllers
 {
-    public class CourseController : ApiController
+    public class EnrollmentController : ApiController
     {
         private UniversityContext db = new UniversityContext();
 
-        // GET: api/Courses
-        public IQueryable<Course> GetCourses()
+        // GET: api/Enrollment
+        public IQueryable<Enrollment> GetEnrollments()
         {
-            return db.Courses;
+            return db.Enrollments;
         }
 
-        // GET: api/Courses/5
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> GetCourse(int id)
+        // GET: api/Enrollment/5
+        [ResponseType(typeof(Enrollment))]
+        public async Task<IHttpActionResult> GetEnrollment(int id)
         {
-            Course course = await db.Courses.FindAsync(id);
-            if (course == null)
+            Enrollment enrollment = await db.Enrollments.FindAsync(id);
+            if (enrollment == null)
             {
                 return NotFound();
             }
 
-            return Ok(course);
+            return Ok(enrollment);
         }
 
-        // PUT: api/Courses/5
+        // PUT: api/Enrollment/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutCourse(int id, Course course)
+        public async Task<IHttpActionResult> PutEnrollment(int id, Enrollment enrollment)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != course.CourseId)
+            if (id != enrollment.EnrollmentId)
             {
                 return BadRequest();
             }
 
-            db.Entry(course).State = EntityState.Modified;
+            db.Entry(enrollment).State = EntityState.Modified;
 
             try
             {
@@ -58,7 +58,7 @@ namespace University_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CourseExists(id))
+                if (!EnrollmentExists(id))
                 {
                     return NotFound();
                 }
@@ -71,35 +71,35 @@ namespace University_API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Courses
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> PostCourse(Course course)
+        // POST: api/Enrollment
+        [ResponseType(typeof(Enrollment))]
+        public async Task<IHttpActionResult> PostEnrollment(Enrollment enrollment)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Courses.Add(course);
+            db.Enrollments.Add(enrollment);
             await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = course.CourseId }, course);
+            return CreatedAtRoute("DefaultApi", new { id = enrollment.EnrollmentId }, enrollment);
         }
 
-        // DELETE: api/Courses/5
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> DeleteCourse(int id)
+        // DELETE: api/Enrollment/5
+        [ResponseType(typeof(Enrollment))]
+        public async Task<IHttpActionResult> DeleteEnrollment(int id)
         {
-            Course course = await db.Courses.FindAsync(id);
-            if (course == null)
+            Enrollment enrollment = await db.Enrollments.FindAsync(id);
+            if (enrollment == null)
             {
                 return NotFound();
             }
 
-            db.Courses.Remove(course);
+            db.Enrollments.Remove(enrollment);
             await db.SaveChangesAsync();
 
-            return Ok(course);
+            return Ok(enrollment);
         }
 
         protected override void Dispose(bool disposing)
@@ -111,9 +111,9 @@ namespace University_API.Controllers
             base.Dispose(disposing);
         }
 
-        private bool CourseExists(int id)
+        private bool EnrollmentExists(int id)
         {
-            return db.Courses.Count(e => e.CourseId == id) > 0;
+            return db.Enrollments.Count(e => e.EnrollmentId == id) > 0;
         }
     }
 }
