@@ -18,7 +18,7 @@ namespace University_API.Controllers
         private UniversityContext db = new UniversityContext();
 
         // GET: api/Courses
-        public IQueryable<Course> GetCourses()
+        public IQueryable<Course> GetCourse()
         {
             return db.Courses;
         }

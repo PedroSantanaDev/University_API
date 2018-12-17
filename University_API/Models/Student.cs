@@ -11,7 +11,7 @@ namespace University_API.Models
         public string LastName { get; set; }
         public string Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
-        public DateTime EnrollmentDate { get; set; }
+        public DateTime? EnrollmentDate { get; set; }
 
         public virtual ICollection<Enrollment> Enrollments { get; set; }
         public virtual ICollection<Address> Addresses { get; set; }

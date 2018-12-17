@@ -13,5 +13,6 @@ namespace University_API.Models
         public DateTime? DateOfBirth { get; set; }
         public string Title { get; set; }
         public string PhoneNumber { get; set; }
+        public DateTime HireDate { get; set; }
     }
 }
