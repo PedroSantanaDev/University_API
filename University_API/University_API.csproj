@@ -159,6 +159,7 @@
     <Compile Include="Areas\HelpPage\SampleGeneration\SampleDirection.cs" />
     <Compile Include="Areas\HelpPage\SampleGeneration\TextSample.cs" />
     <Compile Include="Areas\HelpPage\XmlDocumentationProvider.cs" />
+    <Compile Include="Controllers\AddressController.cs" />
     <Compile Include="Controllers\CourseController.cs" />
     <Compile Include="Controllers\CourseScheduledController.cs" />
     <Compile Include="Controllers\EnrollmentController.cs" />
@@ -170,6 +171,14 @@
     <Compile Include="Migrations\201812162347261_Course_Migration.cs" />
     <Compile Include="Migrations\201812162347261_Course_Migration.Designer.cs">
       <DependentUpon>201812162347261_Course_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812200235173_Enrollment_Migration.cs" />
+    <Compile Include="Migrations\201812200235173_Enrollment_Migration.Designer.cs">
+      <DependentUpon>201812200235173_Enrollment_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812200308102_Address_Migration.cs" />
+    <Compile Include="Migrations\201812200308102_Address_Migration.Designer.cs">
+      <DependentUpon>201812200308102_Address_Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -275,6 +284,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812162347261_Course_Migration.resx">
       <DependentUpon>201812162347261_Course_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812200235173_Enrollment_Migration.resx">
+      <DependentUpon>201812200235173_Enrollment_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812200308102_Address_Migration.resx">
+      <DependentUpon>201812200308102_Address_Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

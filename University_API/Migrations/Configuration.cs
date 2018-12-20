@@ -10,6 +10,7 @@ namespace University_API.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
         }
 
         protected override void Seed(University_API.Models.UniversityContext context)
