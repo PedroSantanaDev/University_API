@@ -1,13 +1,10 @@
 ﻿/*
  * @Author: Pedro Santana
- * @Date: 12/15/2018
+ * @Date: 12/20/2018
  * @Program: University API
- * @Github : https://github.com/PedroSantanaDev
  * 
- * @Purpose: Course controller class for the course actions
+ * @Purpose: Staff controller class for the staff actions
  */
-
-
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
@@ -19,44 +16,44 @@ using University_API.Models;
 
 namespace University_API.Controllers
 {
-    public class CourseController : ApiController
+    public class StaffController : ApiController
     {
         private UniversityContext db = new UniversityContext();
 
-        // GET: api/Courses
-        public IQueryable<Course> GetCourses()
+        // GET: api/Staff
+        public IQueryable<Staff> GetStaffs()
         {
-            return db.Courses;
+            return db.Staffs;
         }
 
-        // GET: api/Courses/5
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> GetCourse(int id)
+        // GET: api/Staff/5
+        [ResponseType(typeof(Staff))]
+        public async Task<IHttpActionResult> GetStaff(int id)
         {
-            Course course = await db.Courses.FindAsync(id);
-            if (course == null)
+            Staff staff = await db.Staffs.FindAsync(id);
+            if (staff == null)
             {
                 return NotFound();
             }
 
-            return Ok(course);
+            return Ok(staff);
         }
 
-        // PUT: api/Courses/5
+        // PUT: api/Staff/5
         [ResponseType(typeof(void))]
-        public async Task<IHttpActionResult> PutCourse(int id, Course course)
+        public async Task<IHttpActionResult> PutStaff(int id, Staff staff)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            if (id != course.CourseId)
+            if (id != staff.StaffId)
             {
                 return BadRequest();
             }
 
-            db.Entry(course).State = EntityState.Modified;
+            db.Entry(staff).State = EntityState.Modified;
 
             try
             {
@@ -64,7 +61,7 @@ namespace University_API.Controllers
             }
             catch (DbUpdateConcurrencyException)
             {
-                if (!CourseExists(id))
+                if (!StaffExists(id))
                 {
                     return NotFound();
                 }
@@ -77,35 +74,35 @@ namespace University_API.Controllers
             return StatusCode(HttpStatusCode.NoContent);
         }
 
-        // POST: api/Courses
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> PostCourse(Course course)
+        // POST: api/Staff
+        [ResponseType(typeof(Staff))]
+        public async Task<IHttpActionResult> PostStaff(Staff staff)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
 
-            db.Courses.Add(course);
+            db.Staffs.Add(staff);
             await db.SaveChangesAsync();
 
-            return CreatedAtRoute("DefaultApi", new { id = course.CourseId }, course);
+            return CreatedAtRoute("DefaultApi", new { id = staff.StaffId }, staff);
         }
 
-        // DELETE: api/Courses/5
-        [ResponseType(typeof(Course))]
-        public async Task<IHttpActionResult> DeleteCourse(int id)
+        // DELETE: api/Staff/5
+        [ResponseType(typeof(Staff))]
+        public async Task<IHttpActionResult> DeleteStaff(int id)
         {
-            Course course = await db.Courses.FindAsync(id);
-            if (course == null)
+            Staff staff = await db.Staffs.FindAsync(id);
+            if (staff == null)
             {
                 return NotFound();
             }
 
-            db.Courses.Remove(course);
+            db.Staffs.Remove(staff);
             await db.SaveChangesAsync();
 
-            return Ok(course);
+            return Ok(staff);
         }
 
         protected override void Dispose(bool disposing)
@@ -117,9 +114,9 @@ namespace University_API.Controllers
             base.Dispose(disposing);
         }
 
-        private bool CourseExists(int id)
+        private bool StaffExists(int id)
         {
-            return db.Courses.Count(e => e.CourseId == id) > 0;
+            return db.Staffs.Count(e => e.StaffId == id) > 0;
         }
     }
 }

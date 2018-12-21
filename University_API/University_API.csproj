@@ -164,6 +164,7 @@
     <Compile Include="Controllers\CourseScheduledController.cs" />
     <Compile Include="Controllers\EnrollmentController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\StaffController.cs" />
     <Compile Include="Migrations\201812162343460_Student_Migration.cs" />
     <Compile Include="Migrations\201812162343460_Student_Migration.Designer.cs">
       <DependentUpon>201812162343460_Student_Migration.cs</DependentUpon>
@@ -179,6 +180,10 @@
     <Compile Include="Migrations\201812200308102_Address_Migration.cs" />
     <Compile Include="Migrations\201812200308102_Address_Migration.Designer.cs">
       <DependentUpon>201812200308102_Address_Migration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201812210239550_Staff_Migration.cs" />
+    <Compile Include="Migrations\201812210239550_Staff_Migration.Designer.cs">
+      <DependentUpon>201812210239550_Staff_Migration.cs</DependentUpon>
     </Compile>
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Controllers\StudentController.cs" />
@@ -290,6 +295,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812200308102_Address_Migration.resx">
       <DependentUpon>201812200308102_Address_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812210239550_Staff_Migration.resx">
+      <DependentUpon>201812210239550_Staff_Migration.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
