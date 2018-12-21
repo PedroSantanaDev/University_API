@@ -1,11 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data;
+﻿/*
+ * @Author: Pedro Santana
+ * @Date: 12/15/2018
+ * @Program: University API
+ * @Github : https://github.com/PedroSantanaDev
+ * 
+ * @Purpose: Student controller class for the staff actions
+ */
+
+
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
 using System.Linq;
 using System.Net;
-using System.Net.Http;
 using System.Threading.Tasks;
 using System.Web.Http;
 using System.Web.Http.Description;
