@@ -15,7 +15,9 @@ namespace University_API.Migrations
                 LastName = "Khan",
                 FirstName = "Ali",
                 Gender = "Male",
-                DateOfBirth = DateTime.Parse("2000-09-01")
+                EnrollmentDate = DateTime.Parse("2014-08-07"),
+                DateOfBirth = DateTime.Parse("2000-09-01"),
+                AddressId = 1
             };
             context.Students.Add(student);
             context.SaveChanges();
@@ -26,7 +28,9 @@ namespace University_API.Migrations
                 LastName = "Lopez",
                 FirstName = "Maria",
                 Gender = "Female",
-                DateOfBirth = DateTime.Parse("1995-10-01")
+                EnrollmentDate = DateTime.Parse("2018-06-09"),
+                DateOfBirth = DateTime.Parse("1995-10-01"),
+                AddressId = 2
             };
             context.Students.Add(student2);
             context.SaveChanges();
@@ -36,7 +40,9 @@ namespace University_API.Migrations
                 LastName = "Doe",
                 FirstName = "Marie",
                 Gender = "Female",
-                DateOfBirth = DateTime.Parse("1998-09-09")
+                EnrollmentDate = DateTime.Parse("2015-08-05"),
+                DateOfBirth = DateTime.Parse("1998-09-09"),
+                AddressId = 2
             };
             context.Students.Add(student3);
             context.SaveChanges();
@@ -46,7 +52,9 @@ namespace University_API.Migrations
                 LastName = "Khan",
                 FirstName = "Ali",
                 Gender = "Male",
-                DateOfBirth = DateTime.Parse("2002-03-05")
+                EnrollmentDate = DateTime.Parse("2003-03-05"),
+                DateOfBirth = DateTime.Parse("2002-03-05"),
+                AddressId = 4
             };
             context.Students.Add(student4);
             context.SaveChanges();

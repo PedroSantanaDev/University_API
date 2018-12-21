@@ -35,7 +35,7 @@ namespace University_API.Controllers
 
             return Ok(student);
         }
-
+       
         // PUT: api/Students/5
         [ResponseType(typeof(void))]
         public async Task<IHttpActionResult> PutStudent(int id, Student student)

@@ -12,5 +12,7 @@ namespace University_API.Models
         public string Gender { get; set; }
         public DateTime? DateOfBirth { get; set; }
         public DateTime? EnrollmentDate { get; set; }
+        
+        public int AddressId { get; set; }
     }
 }
