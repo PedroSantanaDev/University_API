@@ -13,5 +13,11 @@ namespace University_API.Models
         public string City { get; set; }
         public string PostalCode { get; set; }
         public string Province { get; set; }
+        public virtual ICollection<Student> Students { get; set; }
+
+        public Address()
+        {
+            this.Students = new HashSet<Student>();
+        }
     }
 }

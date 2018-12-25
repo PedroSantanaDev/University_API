@@ -185,6 +185,12 @@
     <Compile Include="Migrations\201812210239550_Staff_Migration.Designer.cs">
       <DependentUpon>201812210239550_Staff_Migration.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201812251637494_Course_Registration_Migratin.cs" />
+    <Compile Include="Migrations\201812251637494_Course_Registration_Migratin.Designer.cs">
+      <DependentUpon>201812251637494_Course_Registration_Migratin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\CourseRegistration.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Staff.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="Controllers\ValuesController.cs" />
@@ -298,6 +304,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201812210239550_Staff_Migration.resx">
       <DependentUpon>201812210239550_Staff_Migration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201812251637494_Course_Registration_Migratin.resx">
+      <DependentUpon>201812251637494_Course_Registration_Migratin.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

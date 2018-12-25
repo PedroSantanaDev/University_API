@@ -13,7 +13,8 @@ namespace University_API.Models
         public DbSet<Course> Courses { get; set; }
         public DbSet<CourseScheduled> CourseScheduleds { get; set; }
         public DbSet<Staff> Staffs { get; set; }
-
-        public System.Data.Entity.DbSet<University_API.Models.Address> Addresses { get; set; }
+        public DbSet<Address> Addresses { get; set; }
+        public DbSet<CourseRegistration> CourseRegistrations { get; set; }
+        public DbSet<Department> Departments { get; set; }
     }
 }
