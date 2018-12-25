@@ -13,6 +13,6 @@ namespace University_API.Models
         public string Title { get; set; }
         public string PhoneNumber { get; set; }
         public DateTime HireDate { get; set; }
-        public int AddressId { get; set; }
+        public virtual Address Address { get;  set; }
     }
 }

@@ -16,8 +16,7 @@ namespace University_API.Migrations
                 Title = "Teacher",
                 DateOfBirth = DateTime.Parse("1980-06-09"),
                 HireDate = DateTime.Parse("2017-01-10"),
-                PhoneNumber = "289 584-4875",
-                AddressId = 2
+                PhoneNumber = "289 584-4875"
             };
             context.Staffs.Add(staff);
             context.SaveChanges();
@@ -29,8 +28,7 @@ namespace University_API.Migrations
                 Title = "Teacher",
                 DateOfBirth = DateTime.Parse("1985-06-09"),
                 HireDate = DateTime.Parse("2016-01-10"),
-                PhoneNumber = "249 845-5487",
-                AddressId = 1
+                PhoneNumber = "249 845-5487"
             };
             context.Staffs.Add(staff2);
             context.SaveChanges();
@@ -42,8 +40,7 @@ namespace University_API.Migrations
                 Title = "Accountant",
                 DateOfBirth = DateTime.Parse("1975-02-05"),
                 HireDate = DateTime.Parse("2010-01-10"),
-                PhoneNumber = "249 457-5689",
-                AddressId = 1
+                PhoneNumber = "249 457-5689"
             };
             context.Staffs.Add(staff3);
             context.SaveChanges();

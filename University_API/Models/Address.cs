@@ -14,10 +14,12 @@ namespace University_API.Models
         public string PostalCode { get; set; }
         public string Province { get; set; }
         public virtual ICollection<Student> Students { get; set; }
+        public virtual ICollection<Staff> Staffs { get; set; }
 
         public Address()
         {
-            this.Students = new HashSet<Student>();
+            Students = new HashSet<Student>();
+            Staffs = new HashSet<Staff>();
         }
     }
 }
